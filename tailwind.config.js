@@ -3,7 +3,12 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"
   , "./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "poppins" : ['Poppins', 'sans-serif'],
+        "yatra" : ['Yatra One', 'cursive']
+        } 
+    },
   },
   plugins: [],
 }
