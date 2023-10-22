@@ -1,36 +1,211 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 
-.Poppins{
-  font-family: Poppins;
 }
+.Poppins{
+  font-family: 'Poppins';
+}
+
+.PoppinsMedium{
+  font-family: 'PoppinsMedium';
+}
+
+.LandingTitle{
+  font-size: 2vmin;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+  flex:1;
+  font-family: 'PoppinsMedium';
+}
+
 .LandingItem{
   display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 9vh;
+  font-size: 9vmin;
   padding: 0;
-  margin: 0;
+  flex-direction: column;
   flex: 1;
 }
 .LandingItem1{
   display: flex;
+  width: 100vw;
+  -webkit-text-stroke-color: #62D5FC;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  font-size: 9vh;
-  color: blue;
+  font-size: 9vmin;
   padding: 0;
   margin: 0;
   flex: 1;
 }
-
+.Translate1{
+  transform: translateY(-40vh);
+}
+.Translate2{
+  transform: translateY(-30vh);
+}
+.Translate3{
+  transform: translateY(-20vh);
+}
+.Translate4{
+  transform: translateY(+40vh);
+}
+.Translate5{
+  transform: translateY(+30vh);
+}
+.Translate6{
+  transform: translateY(+20vh);
+}
+.Translate7{
+  animation: rotateDiv1;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate8{
+  animation: rotateDiv2;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate9{
+  animation: rotateDiv3;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate10{
+  animation: rotateDiv4;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate11{
+  animation: rotateDiv5;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate12{
+  animation: rotateDiv6;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Translate13{
+  animation: EnterTitle;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes rotateDiv1 {
+  0% {
+    transform: translateY(-40vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes rotateDiv2 {
+  0% {
+    transform: translateY(-30vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes rotateDiv3 {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes rotateDiv4 {
+  0% {
+    transform: translateY(+40vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes rotateDiv5 {
+  0% {
+    transform: translateY(+30vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes rotateDiv6 {
+  0% {
+    transform: translateY(+20vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@keyframes EnterTitle {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .LandingGrid{
   height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
 }
 @font-face {
   font-family: 'Poppins';
   src: url("./assets/PoppinsBlack-VxOe.otf");
 };
+@font-face{
+  font-family: 'PoppinsMedium';
+  src: url("./assets/PoppinsMedium.otf");
+}
