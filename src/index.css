@@ -128,6 +128,14 @@ body{
    animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+.Translate14{
+  animation: TitletoTop;
+   animation-duration: 3s;
+   animation-timing-function: ease; /* For a steady rate loop */
+   animation-delay: 0s;             
+   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 @keyframes rotateDiv1 {
   0% {
     transform: translateY(-40vh);
@@ -198,8 +206,32 @@ body{
     opacity: 1;
   }
 }
+@keyframes TitletoTop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    left:0%;
+    font-size: 4vmin;
+    opacity: 1;
+  }
+  
+}
 .LandingGrid{
   height: 100vh;
+  position: absolute;
+}
+.hidden{
+  display: none;
+}
+.HomePage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
 }
 @font-face {
   font-family: 'Poppins';
